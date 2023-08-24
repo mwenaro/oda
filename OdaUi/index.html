@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fresh Veggies, Fruites and Cereals</title>
+  <link rel="stylesheet" href="categories.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="fieldset.css">
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+  <script type="text/javascript" src="fieldseslide.js"></script>
+</head>
+<div>
+  <header>
+    <div class="nav">
+
+      <a href="#" class="logo">
+        <img src="img/logo.jpg" alt="">
+      </a>
+
+      <div class="box">
+        <div class="cart-count">0</div>
+        <ion-icon name="cart"  id="cart-icon" class="ion-icon" style="font-size: 35px;"></ion-icon>
+      </div>
+
+      <div class="cart">
+        <div class="cart-title">Cart Items</div>
+        <div class="cart-content">
+
+          <!--<div class="cart-box">
+            <img src="images/97.jpg" class="cart-img">
+            <div class="detail-box">
+              <div class="cart-food-title">Special Dosai</div>
+              <div class="price-box">
+                <div class="cart-price">Rs.72</div>
+                 <div class="cart-amt">Rs.72</div>
+             </div>
+              <input type="number" value="1" class="cart-quantity" >
+            </div>
+            <ion-icon name="trash" class="cart-remove"></ion-icon>
+          </div>
+
+          <div class="cart-box">
+            <img src="images/97.jpg" class="cart-img">
+            <div class="detail-box">
+              <div class="cart-food-title">Special Dosai</div>
+              <div class="price-box">
+                <div class="cart-price">Rs.72</div>
+                 <div class="cart-amt">Rs.72</div>
+             </div>
+              <input type="number" value="1" class="cart-quantity">
+            </div>
+            <ion-icon name="trash" class="cart-remove"></ion-icon>
+          </div>
+        -->
+        </div>
+        
+      <div class="total">
+        <div class="total-title">Total</div>
+        <div class="total-price">Ksh.0</div>
+      </div>
+
+      <button class="btn-buy">Place Order</button>
+
+      <ion-icon name="close" id="cart-close"></ion-icon>
+
+      </div>
+    </div>
+  </header>
+  <section class="wraper1">
+    <!-- slider start -->
+    <div class='slide'>
+      <div class='controlls'>
+        <button data-btn-prev>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+          </svg>
+
+        </button>
+        <button data-btn-next>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+          </svg>
+
+        </button>
+      </div>
+      <div class='main'>
+        <div class='item'>
+          <img data-slide-img src='img/b1.jpg'>
+        </div>
+        <div class='item'>
+          <img data-slide-img src='img/b2.jpeg'>
+        </div>
+        <div class='item'>
+          <img data-slide-img src='img/b3.jpeg'>
+        </div>
+      </div>
+    </div>
+    <!-- slider end -->
+  </section>
+
+
+  <div class="container">
+   <!-- search start -->
+    <div class="padding-categ">
+      <div class="container-categ">
+        <div class="wrapper-dropdown" id="dropdown">
+          <span class="selected-display" id="destination">All Categories</span>
+          <svg class="arrow" id="drp-arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="transition-all ml-auto rotate-180">
+            <path d="M7 14.5l5-5 5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+          <ul class="dropdown">
+            <a href="#" class="items" data-category="vegetables"><li>Vegetables</li></a>
+            <a href="#" class="items" data-category="fruits"><li>Fruits</li></a>
+            <a href="#" class="items" data-category="cereals"><li>Cereals</li></a>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- search end -->
+
+
+<div class="product-container">
+    <!-- vegetables start -->
+
+    <div class="shop-content product vegetables">
+      <div class="food-box">
+        <div class="flexed" style="display: flex;">
+            <div class="pic"><img src="img/viazi.jpg" class="food-img">
+            </div>
+            <div class="texts-together">
+                <h2 class="food-title">Fresh Potatoes</h2>
+                <span class="food-price">Ksh.50</span>
+                <hr>
+                <p>MOQ 3KGS</p>
+                <p>Fresh Potatoes Best for Fries</p>
+            </div>
+        </div>
+        <div class="add-cart">
+           <ion-icon name="cart"></ion-icon> Add To Cart
+        </div>
+      </div>
+
+      <div class="food-box">
+        <div class="flexed" style="display: flex;">
+            <div class="pic"><img src="img/kitungu.jfif" class="food-img">
+            </div>
+            <div class="texts-together">
+                <h2 class="food-title">Fresh Onion</h2>
+                <span class="food-price">Ksh.200</span>
+                <hr>
+                <p>MOQ 2KGS</p>
+                <p>Fresh Onion Best for Cooking</p>
+            </div>
+        </div>
+        <div class="add-cart">
+           <ion-icon name="cart"></ion-icon> Add To Cart
+        </div>
+      </div>
+
+      <div class="food-box">
+        <div class="flexed" style="display: flex;">
+            <div class="pic"><img src="img/carrot.webp" class="food-img">
+            </div>
+            <div class="texts-together">
+                <h2 class="food-title">Fresh Carrots</h2>
+                <span class="food-price">Ksh.70</span>
+                <hr>
+                <p>MOQ 1KGS</p>
+                <p>Fresh Carrots Best for Cooking</p>
+            </div>
+        </div>
+        <div class="add-cart">
+           <ion-icon name="cart"></ion-icon> Add To Cart
+        </div>
+        
+      </div>
+
+      <div class="food-box">
+        <div class="flexed" style="display: flex;">
+            <div class="pic"><img src="img/tangawizi.webp" class="food-img">
+            </div>
+            <div class="texts-together">
+                <h2 class="food-title">Fresh Gingers</h2>
+                <span class="food-price">Ksh.65</span>
+                <hr>
+                <p>MOQ 1KGS</p>
+                <p>Fresh Gingers Best for Cooking</p>
+            </div>
+        </div>
+        <div class="add-cart">
+           <ion-icon name="cart"></ion-icon> Add To Cart
+        </div>
+        
+      </div>
+
+      <div class="food-box">
+        <div class="flexed" style="display: flex;">
+            <div class="pic"><img src="img/tomatoes1.webp" class="food-img">
+            </div>
+            <div class="texts-together">
+                <h2 class="food-title">Fresh Tomatoes</h2>
+                <span class="food-price">Ksh.100</span>
+                <hr>
+                <p>MOQ 1KGS</p>
+                <p>Fresh Tomatoes Best for Cooking</p>
+            </div>
+        </div>
+        <div class="add-cart">
+           <ion-icon name="cart"></ion-icon> Add To Cart
+        </div>
+      </div>
+
+      <div class="food-box">
+        <div class="flexed" style="display: flex;">
+            <div class="pic"><img src="img/garlic.jpg_480Wx480H" class="food-img">
+            </div>
+            <div class="texts-together">
+                <h2 class="food-title">Fresh Garlic</h2>
+                <span class="food-price">Ksh.160</span>
+                <hr>
+                <p>MOQ 1KGS</p>
+                <p>Fresh Garlics Best for Cooking</p>
+            </div>
+        </div>
+        <div class="add-cart">
+           <ion-icon name="cart"></ion-icon> Add To Cart
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+
+<!-- vegetables end -->
+
+<!-- fruits start -->
+
+<div class="shop-content product fruits">
+  <div class="food-box">
+    <div class="flexed" style="display: flex;">
+        <div class="pic"><img src="img/pina.jpg" class="food-img">
+        </div>
+        <div class="texts-together">
+            <h2 class="food-title">Fresh Pineapple</h2>
+            <span class="food-price">Ksh.80</span>
+            <hr>
+            <p>Per Pc</p>
+            <p>Fresh Pineapple Best For Juice</p>
+        </div>
+    </div>
+    <div class="add-cart">
+       <ion-icon name="cart"></ion-icon> Add To Cart
+    </div>
+  </div>
+
+  <div class="food-box">
+    <div class="flexed" style="display: flex;">
+        <div class="pic"><img src="img/avocado.jpg" class="food-img">
+        </div>
+        <div class="texts-together">
+            <h2 class="food-title">Fresh Avocadoes</h2>
+            <span class="food-price">Ksh.30</span>
+            <hr>
+            <p>Per Pc</p>
+            <p>Fresh Avocadoes Best For Juice</p>
+        </div>
+    </div>
+    <div class="add-cart">
+       <ion-icon name="cart"></ion-icon> Add To Cart
+    </div>
+  </div>
+
+  <div class="food-box">
+    <div class="flexed" style="display: flex;">
+        <div class="pic"><img src="img/oranges.jpg" class="food-img">
+        </div>
+        <div class="texts-together">
+            <h2 class="food-title">Fresh Oranges</h2>
+            <span class="food-price">Ksh.15</span>
+            <hr>
+            <p>Per Pc</p>
+            <p>Fresh Oranges Best for juice</p>
+        </div>
+    </div>
+    <div class="add-cart">
+       <ion-icon name="cart"></ion-icon> Add To Cart
+    </div>
+  </div>
+
+  <div class="food-box">
+    <div class="flexed" style="display: flex;">
+        <div class="pic"><img src="img/apples.webp" class="food-img">
+        </div>
+        <div class="texts-together">
+            <h2 class="food-title">Fresh Apples</h2>
+            <span class="food-price">Ksh.25</span>
+            <hr>
+            <p>Per Pc</p>
+            <p>Fresh Apples Best for juice</p>
+        </div>
+    </div>
+    <div class="add-cart">
+       <ion-icon name="cart"></ion-icon> Add To Cart
+    </div>
+  </div>
+
+  <div class="food-box">
+    <div class="flexed" style="display: flex;">
+        <div class="pic"><img src="img/mangoes.jpeg" class="food-img">
+        </div>
+        <div class="texts-together">
+            <h2 class="food-title">Fresh Mangoes</h2>
+            <span class="food-price">Ksh.30</span>
+            <hr>
+            <p>Per Pc</p>
+            <p>Fresh Mangoes Best for juice</p>
+        </div>
+    </div>
+    <div class="add-cart">
+       <ion-icon name="cart"></ion-icon> Add To Cart
+    </div>
+  </div>
+
+  <div class="food-box">
+    <div class="flexed" style="display: flex;">
+        <div class="pic"><img src="img/mangoes.jpeg" class="food-img">
+        </div>
+        <div class="texts-together">
+            <h2 class="food-title">Fresh Mangoes</h2>
+            <span class="food-price">Ksh.30</span>
+            <hr>
+            <p>Per Pc</p>
+            <p>Fresh Mangoes Best for juice</p>
+        </div>
+    </div>
+    <div class="add-cart">
+       <ion-icon name="cart"></ion-icon> Add To Cart
+    </div>
+  </div>
+
+
+</div>
+</div>
+
+<!-- fruit end -->
+
+<!-- Cereals start -->
+
+<div class="shop-content product cereals">
+  <div class="food-box">
+    <div class="flexed" style="display: flex;">
+        <div class="pic"><img src="img/maharagwe.webp" class="food-img">
+        </div>
+        <div class="texts-together">
+            <h2 class="food-title">Maharagwe</h2>
+            <span class="food-price">Ksh.120</span>
+            <hr>
+            <p>MOQ 1KGS</p>
+            <p>Availability subject to stocks and seasonality</p>
+        </div>
+    </div>
+    <div class="add-cart">
+       <ion-icon name="cart"></ion-icon> Add To Cart
+    </div>
+  </div>
+
+  <div class="food-box">
+    <div class="flexed" style="display: flex;">
+        <div class="pic"><img src="img/lentis.jpg" class="food-img">
+        </div>
+        <div class="texts-together">
+            <h2 class="food-title">Dengu Nzima</h2>
+            <span class="food-price">Ksh.140</span>
+            <hr>
+            <p>MOQ 1KGS</p>
+            <p>Availability subject to stocks and seasonality</p>
+        </div>
+    </div>
+    <div class="add-cart">
+       <ion-icon name="cart"></ion-icon> Add To Cart
+    </div>
+  </div>
+
+  <div class="food-box">
+    <div class="flexed" style="display: flex;">
+        <div class="pic"><img src="img/mahindi.jpg" class="food-img">
+        </div>
+        <div class="texts-together">
+            <h2 class="food-title">Maize Seeds</h2>
+            <span class="food-price">Ksh.150</span>
+            <hr>
+            <p>MOQ 1KGS</p>
+            <p>Availability subject to stocks and seasonality</p>
+        </div>
+    </div>
+    <div class="add-cart">
+       <ion-icon name="cart"></ion-icon> Add To Cart
+    </div>
+    
+  </div>
+
+  <div class="food-box">
+    <div class="flexed" style="display: flex;">
+        <div class="pic"><img src="img/pojo.jpg" class="food-img">
+        </div>
+        <div class="texts-together">
+            <h2 class="food-title">Pojo Nzima</h2>
+            <span class="food-price">Ksh.130</span>
+            <hr>
+            <p>MOQ 1KGS</p>
+            <p>Availability subject to stocks and seasonality</p>
+        </div>
+    </div>
+    <div class="add-cart">
+       <ion-icon name="cart"></ion-icon> Add To Cart
+    </div>
+    
+  </div>
+
+  <div class="food-box">
+    <div class="flexed" style="display: flex;">
+        <div class="pic"><img src="img/chpea.jpg" class="food-img">
+        </div>
+        <div class="texts-together">
+            <h2 class="food-title">Chick Peas</h2>
+            <span class="food-price">Ksh.240</span>
+            <hr>
+            <p>MOQ 1KGS</p>
+            <p>Availability subject to stocks and seasonality</p>
+        </div>
+    </div>
+    <div class="add-cart">
+       <ion-icon name="cart"></ion-icon> Add To Cart
+    </div>
+  </div>
+
+  <div class="food-box">
+    <div class="flexed" style="display: flex;">
+        <div class="pic"><img src="img/whitebeans.jpg" class="food-img">
+        </div>
+        <div class="texts-together">
+            <h2 class="food-title">White Beans</h2>
+            <span class="food-price">Ksh.120</span>
+            <hr>
+            <p>MOQ 1KGS</p>
+            <p>Availability subject to stocks and seasonality</p>
+        </div>
+    </div>
+    <div class="add-cart">
+       <ion-icon name="cart"></ion-icon> Add To Cart
+    </div>
+  </div>
+
+
+</div>
+</div>
+
+<!-- Cereals end -->
+
+
+
+</div>
+
+<div class="br" style="padding-bottom: 70px;"></div>
+  <footer>
+    <p>© 2022 Subsidiary of Splendid Group. All rights reserved.</p>
+  </footer>
+  <script src="js/script.js"></script>
+  <script src="js/slider.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+    crossorigin="anonymous"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/categories.js"></script>
+
+</body>
+</html>
